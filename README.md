@@ -2,11 +2,24 @@
 
 Nama : Rizki Rifani (FSWD 5A)
 
-Program ini akan berjalan di port sesuai dengan yang ditentukan (misalnya, port 3000). Program dapat diakses dengan 2 endpoint utama yaitu berikut:
+Program ini merupakan projek Restfull API yang terdiri dari GET, POST, DELETE, dan PUT. kemudian terdapat endpoint untuk register user dan login user yang mengimplementasikan authorization dan authentication. Yang mana nantinya hanya pengguna yang terdaftar dan memiliki token yang dapat melakukan sistem CRUD pada API data movie. Pada program ini ada beberapa endpoint utama yang digunakan untuk menjalan program yaitu sebagai berikut:
 
-- Untuk akses ke API User: `http://localhost:3000/api/users`
-- Untuk akses ke API Movie: `http://localhost:3000/api/movies`
-- Untuk akses API melalui Swagger : `http://localhost:3000/api-docs`
+- Untuk akses ke User: `http://localhost:3000/api/users` 
+- Untuk akses ke  Movie: `http://localhost:3000/api/movies`
+- Untuk akses melalui Swagger : `http://localhost:3000/api-docs`
+
+Namun untuk mengakses program diperlukan endpoint yang lebih detail yaitu sebagai berikut :
+
+- Untuk akses ke User Login: `http://localhost:3000/api/users/login`
+- Untuk akses ke User Register: `http://localhost:3000/api/users/register`
+
+Pada program ini untuk mengakses movie diperlukan cara khusus yaitu user harus sudah terdaftar dan memiliki token yang nantinya dapat digunakan untuk melakukan CRUD data movie yaitu sebagai berikut untuk endpoint lebih detail dari movie:
+
+- Untuk mendapatkan data movie dengan pagination(GET): `http://localhost:3000/api/movies`
+- Untuk membuat data movie baru(POST): `http://localhost:3000/api/`
+- Untuk mendapatkan data movie by id (GET): `http://localhost:3000/api/:id`
+- Untuk update data movie(PUT): `http://localhost:3000/api/:id`
+- Untuk hapus data movie(DELETE): `http://localhost:3000/api/:id`
 
 
 </br>
