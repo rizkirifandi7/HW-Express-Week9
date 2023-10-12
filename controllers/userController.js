@@ -15,9 +15,9 @@ const registerUser = async (req, res) => {
 			role: newUser.role,
 		};
 
-		// Buat token JWT dengan kunci rahasia
+		// Buat token JWT 
 		const token = jwt.sign(payload, process.env.JWT_KEY, {
-			expiresIn: "1h", // Waktu kadaluwarsa token
+			expiresIn: "1h",
 		});
 
 		const response = {
@@ -32,6 +32,7 @@ const registerUser = async (req, res) => {
 	}
 };
 
+// Login pengguna
 const loginUser = async (req, res) => {
 	try {
 		const { email, password } = req.body;
@@ -50,10 +51,9 @@ const loginUser = async (req, res) => {
 				role: user.role
 			};
 
-			// Buat token JWT dengan kunci rahasia
+			// Buat token JWT 
 			const token = jwt.sign(payload, process.env.JWT_KEY, { expiresIn: "1h" });
 
-			// Kirim informasi pengguna yang diverifikasi
 			res.json({ message: "Autentikasi berhasil!", user: payload, token: token });
 		} else {
 			res.status(401).json({ message: "Autentikasi gagal!" });

@@ -15,7 +15,6 @@ app.use(morgan("combined"));
 app.use("/api/movies", movieRoutes);
 app.use("/api/users", userRoutes);
 
-// Pemasangan middleware Swagger
 app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(specs));
 
 app.listen(port, () => {
