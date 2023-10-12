@@ -56,7 +56,7 @@ Sebelum dapat menjalankan aplikasi, pastikan telah memenuhi persyaratan berikut:
 1. Clone repositori ini ke komputer:
 
    ```bash
-   git clone https://github.com/rizkirifandi7/HW-ExpressJS.git
+   git clone https://github.com/rizkirifandi7/HW-Express-Week9.git
 
 2. Pindah ke direktori projek
 
