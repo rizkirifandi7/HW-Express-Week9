@@ -22,8 +22,32 @@ const { authenticateUser } = require("../middleware/authMiddleware");
  *     responses:
  *       200:
  *         description: A list of movies.
+ *     tags:
+ *       - movies
  */
 router.get("/", movieController.getMovies);
+
+/**
+ * @swagger
+ * /api/movies/{id}:
+ *   get:
+ *     summary: Get a movie by ID.
+ *     security:
+ *       - bearerAuth: []
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         schema:
+ *           type: integer
+ *         required: true
+ *         description: Movie ID
+ *     responses:
+ *       200:
+ *         description: Get a movie by id.
+ *     tags:
+ *       - movies
+ */
+router.get("/:id", authenticateUser, movieController.getMovieById);
 
 /**
  * @swagger

@@ -13,6 +13,17 @@ const getMovies = async (req, res) => {
 	}
 };
 
+// mendapatkan film berdasarkan id
+const getMovieById = async (req, res) =>{
+    try {
+        const id = req.params.id;
+        const movie = await Movie.getMovieById(id);
+        res.json(movie);
+    } catch (error) {
+        res.status(500).json({ message: "Internal Server Error!" });
+    }
+}
+
 // Membuat film baru
 const createMovie = async (req, res) => {
 	try {
@@ -47,4 +58,4 @@ const updateMovie = async (req, res) => {
 	}
 };
 
-module.exports = { getMovies, createMovie, deleteMovie, updateMovie };
+module.exports = { getMovies, createMovie, deleteMovie, updateMovie, getMovieById };

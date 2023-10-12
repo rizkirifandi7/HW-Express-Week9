@@ -1,7 +1,7 @@
-const pool = require('../db/database')
+const pool = require("../db/database");
 
 class Movie {
-    // mendapatkan data film dengan pagination
+	// mendapatkan data film dengan pagination
 	static async getMovies(limit, offset) {
 		try {
 			const query = {
@@ -16,7 +16,22 @@ class Movie {
 		}
 	}
 
-    // membuat data film baru
+    // mendapatkan data film berdasarkan id
+	static async getMovieById(id) {
+		try {
+			const query = {
+				text: "SELECT * FROM movies WHERE id = $1",
+				values: [id],
+			};
+
+			const result = await pool.query(query);
+			return result.rows[0];
+		} catch (error) {
+			throw error;
+		}
+	}
+
+	// membuat data film baru
 	static async createMovie(title, genres, year) {
 		try {
 			const query = {
@@ -31,7 +46,7 @@ class Movie {
 		}
 	}
 
-    // menghapus data film berdasarkan id
+	// menghapus data film berdasarkan id
 	static async deleteMovie(id) {
 		try {
 			const query = {
@@ -46,7 +61,7 @@ class Movie {
 		}
 	}
 
-    // update data film
+	// update data film
 	static async updateMovie(id, title, genres, year) {
 		try {
 			const query = {
