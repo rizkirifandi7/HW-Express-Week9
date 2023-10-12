@@ -67,7 +67,16 @@ Sebelum dapat menjalankan aplikasi, pastikan telah memenuhi persyaratan berikut:
 
    ```bash
    npm install
+   
+4. Buatlah file baru dengan nama `.env` kemudian atur dan sesuaikan dengan program 
 
-4. Import sample data `movies-database.sql` ke database PostgreSQL
+5. Import sample data `movies-database.sql` ke database PostgreSQL
 
-5. Proses selesai
+6. Proses selesai
+
+
+## Demo Program
+1. Pastikan database(PostgreSQL) sudah dibuka, kemudian jalankan program dengan terminal menggunakan command berikut : 
+
+   ```bash
+   npm run start
