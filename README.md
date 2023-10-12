@@ -107,3 +107,57 @@ Sebelum dapat menjalankan aplikasi, pastikan telah memenuhi persyaratan berikut:
    Maka akan menghasilkan output dan menghasilkan token yang nantinya dapat digunakan untuk melakukan CRUD data movie:
 
   ![Login](./public/assets/login2.jpeg)
+
+5. Kemudian cobalah melakukan CRUD database movie namun sebelum melakukan itu masukan terlebih dahulu token yang didapatkan dari hasil registrasi ataupun login, setelah itu masukan ke Authorize 
+
+  ![Auth](./public/assets/auth2.jpeg)
+ 
+  </br>
+   Maka akan menghasilkan output sebagai berikut dan pengguna sudah dapat melakukan CRUD untuk data movie:
+
+  ![Auth](./public/assets/auth1.jpeg)
+
+6. Kemudian cobalah melakukan CRUD database movie dengan mencoba pagination
+
+  ![Pagi](./public/assets/pagi1.jpeg)
+ 
+  </br>
+   Maka akan menghasilkan output sebagai berikut:
+
+  ![Auth](./public/assets/pagi2.jpeg)
+
+7. Kemudian cobalah melakukan CRUD database movie dengan mencoba membuat data movie baru
+
+  ![create](./public/assets/create1.jpeg)
+ 
+  </br>
+   Maka akan menghasilkan output sebagai berikut:
+
+  ![create](./public/assets/create1.jpeg)
+
+8. Kemudian cobalah melakukan CRUD database movie dengan mencoba mendapatkan data berdasarkan id
+
+  ![getid](./public/assets/getid1.jpeg)
+ 
+  </br>
+   Maka akan menghasilkan output sebagai berikut:
+
+  ![getid](./public/assets/getid2.jpeg)
+
+9. Kemudian cobalah melakukan CRUD database movie dengan melakukan update data
+
+  ![update](./public/assets/update1.jpeg)
+ 
+  </br>
+   Maka akan menghasilkan output sebagai berikut:
+
+  ![update](./public/assets/update2.jpeg)
+
+10. Kemudian cobalah melakukan CRUD database movie dengan melakukan hapus data
+
+  ![del](./public/assets/del1.jpeg)
+ 
+  </br>
+   Maka akan menghasilkan output sebagai berikut:
+
+  ![del](./public/assets/del2.jpeg)
