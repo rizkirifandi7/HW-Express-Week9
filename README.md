@@ -133,7 +133,7 @@ Sebelum dapat menjalankan aplikasi, pastikan telah memenuhi persyaratan berikut:
   </br>
    Maka akan menghasilkan output sebagai berikut:
 
-  ![create](./public/assets/create1.jpeg)
+  ![create](./public/assets/create2.jpeg)
 
 8. Kemudian cobalah melakukan CRUD database movie dengan mencoba mendapatkan data berdasarkan id
 
