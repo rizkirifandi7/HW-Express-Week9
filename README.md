@@ -76,7 +76,18 @@ Sebelum dapat menjalankan aplikasi, pastikan telah memenuhi persyaratan berikut:
 
 
 ## Demo Program
-1. Pastikan database(PostgreSQL) sudah dibuka, kemudian jalankan program dengan terminal menggunakan command berikut : 
+1. Pastikan semua program sudah benar dan terhubung ke database, kemudian jalankan program dengan terminal menggunakan command berikut : 
 
    ```bash
    npm run start
+
+2. Untuk memudahkan cara penggunaan program, gunakanlah endpoint yang menggunakan Swagger dan masukan endpoint tersebut ke browser :
+
+     ```bash
+   http://localhost:3000/api-docs/
+
+  Maka akan muncul seperti berikut:
+
+  ![Start](./public/assets/1.jpeg)
+     
+3. 
