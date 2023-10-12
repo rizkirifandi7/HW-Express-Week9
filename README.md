@@ -90,4 +90,20 @@ Sebelum dapat menjalankan aplikasi, pastikan telah memenuhi persyaratan berikut:
 
   ![Start](./public/assets/1.jpeg)
      
-3. 
+3. Untuk pertama cobalah untuk melakukan registrasi user dengan mengakses menu registrasi, isi setiap data nya :
+
+  ![Regis](./public/assets/regis1.jpeg)
+
+  </br>
+  Maka akan menghasilkan output dan menghasilkan token yang nantinya dapat digunakan untuk melakukan CRUD data movie:
+
+  ![Regis](./public/assets/regis2.jpeg)
+
+4. Kemudian cobalah melakukan login 
+
+  ![Login](./public/assets/login1.jpeg)
+ 
+  </br>
+   Maka akan menghasilkan output dan menghasilkan token yang nantinya dapat digunakan untuk melakukan CRUD data movie:
+
+  ![Login](./public/assets/login2.jpeg)
