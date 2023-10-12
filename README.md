@@ -6,10 +6,12 @@ Program ini akan berjalan di port sesuai dengan yang ditentukan (misalnya, port 
 
 - Untuk akses ke API User: `http://localhost:3000/api/users`
 - Untuk akses ke API Movie: `http://localhost:3000/api/movies`
+- Untuk akses API melalui Swagger : `http://localhost:3000/api-docs`
+
 
 </br>
 Pada program ini terdiri dari 6 folder dan 1 file utama, yaitu :
-
+</br>
 - models
 
 Folder ini merupakan berisi file user dan movie yang digunakan untuk melakukan CRUD data dari database dengan query
@@ -34,6 +36,10 @@ Folder ini berisi file route dari user dan movie yang digunakan untuk melakukan 
 
 Folder ini berisi konfigurasi untuk swagger
 
+- index.js
+
+file ini merupakan file utama untuk menjalankan keseluruhan program
+
 
 ## Persyaratan
 
@@ -54,13 +60,13 @@ Sebelum dapat menjalankan aplikasi, pastikan telah memenuhi persyaratan berikut:
 2. Pindah ke direktori projek
 
    ```bash
-   cd HW-ExpressJS
+   cd HW-Express-Week9
 
-3. Install depedensi atau module
+3. Install package module
 
    ```bash
    npm install
 
-4. Import sample data `dvdrental.tar` ke database PostgreSQL
+4. Import sample data `movies-database.sql` ke database PostgreSQL
 
 5. Proses selesai
