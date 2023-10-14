@@ -6,7 +6,7 @@ const userController = require("../controllers/userController");
  * @swagger
  * /api/users/register:
  *   post:
- *     summary: Register a new user.
+ *     summary: Membuat pengguna baru.
  *     requestBody:
  *       content:
  *         application/json:
@@ -23,7 +23,7 @@ const userController = require("../controllers/userController");
  *                 type: string
  *     responses:
  *       201:
- *         description: The newly registered user.
+ *         description: Pengguna baru telah terdaftar.
  *     tags:
  *       - users
  */
@@ -33,7 +33,7 @@ router.post("/register", userController.registerUser);
  * @swagger
  * /api/users/login:
  *   post:
- *     summary: Login as a user and obtain a JWT token.
+ *     summary: Login untuk pengguna dan mendapatkan Token.
  *     requestBody:
  *       content:
  *         application/json:
@@ -46,7 +46,7 @@ router.post("/register", userController.registerUser);
  *                 type: string
  *     responses:
  *       200:
- *         description: A JWT token for authenticated access.
+ *         description: Informasi pengguna dan Token JWT untuk akses terotentikasi.
  *     tags:
  *       - users
  */

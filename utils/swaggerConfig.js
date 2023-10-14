@@ -6,11 +6,11 @@ const options = {
 		info: {
 			title: "Movie API",
 			version: "1.0.0",
-			description: "API documentation using Swagger",
+			description: "API Film dan Pengguna",
 		},
 		servers: [
 			{
-				url: "http://localhost:3000", // Sesuaikan dengan URL server Anda
+				url: "http://localhost:3000", 
 				description: "Development Server",
 			},
 		],
@@ -29,7 +29,7 @@ const options = {
 			},
 		],
 	},
-	apis: ["./routes/*.js"], // Atur sesuai dengan rute yang ingin Anda dokumentasikan
+	apis: ["./routes/*.js"],
 };
 
 const specs = swaggerJsdoc(options);

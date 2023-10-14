@@ -7,21 +7,21 @@ const { authenticateUser } = require("../middleware/authMiddleware");
  * @swagger
  * /api/movies:
  *   get:
- *     summary: Get a list of movies with pagination.
+ *     summary: Mendapatkan daftar movie berdasarkan paginasi.
  *     parameters:
  *       - in: query
  *         name: limit
  *         schema:
  *           type: integer
- *         description: Number of movies to retrieve (default is 10).
+ *         description: Jumlah film yang akan diambil (defaultnya adalah 10).
  *       - in: query
  *         name: offset
  *         schema:
  *           type: integer
- *         description: Number of movies to skip (default is 0).
+ *         description: Jumlah film yang akan dilewati (defaultnya adalah 0).
  *     responses:
  *       200:
- *         description: A list of movies.
+ *         description: Daftar film.
  *     tags:
  *       - movies
  */
@@ -31,7 +31,7 @@ router.get("/", movieController.getMovies);
  * @swagger
  * /api/movies/{id}:
  *   get:
- *     summary: Get a movie by ID.
+ *     summary: Mendapatkan film berdasarkan ID.
  *     security:
  *       - bearerAuth: []
  *     parameters:
@@ -43,7 +43,7 @@ router.get("/", movieController.getMovies);
  *         description: Movie ID
  *     responses:
  *       200:
- *         description: Get a movie by id.
+ *         description: Mendapatkan film berdasarkan ID.
  *     tags:
  *       - movies
  */
@@ -53,7 +53,7 @@ router.get("/:id", authenticateUser, movieController.getMovieById);
  * @swagger
  * /api/movies:
  *   post:
- *     summary: Create a new movie.
+ *     summary: Membuat film baru.
  *     security:
  *       - bearerAuth: []
  *     requestBody:
@@ -70,7 +70,7 @@ router.get("/:id", authenticateUser, movieController.getMovieById);
  *                 type: integer
  *     responses:
  *       201:
- *         description: The newly created movie.
+ *         description: Film baru telah dibuat.
  *     tags:
  *       - movies
  */
@@ -80,7 +80,7 @@ router.post("/", authenticateUser, movieController.createMovie);
  * @swagger
  * /api/movies/{id}:
  *   delete:
- *     summary: Delete a movie by ID.
+ *     summary: Menghapus film berdasarkan ID.
  *     security:
  *       - bearerAuth: []
  *     parameters:
@@ -92,7 +92,7 @@ router.post("/", authenticateUser, movieController.createMovie);
  *         description: Movie ID
  *     responses:
  *       200:
- *         description: The deleted movie.
+ *         description: Film telah dihapus.
  *     tags:
  *       - movies
  */
@@ -102,7 +102,7 @@ router.delete("/:id", authenticateUser, movieController.deleteMovie);
  * @swagger
  * /api/movies/{id}:
  *   put:
- *     summary: Update a movie by ID.
+ *     summary: Memperbarui film berdasarkan ID.
  *     security:
  *       - bearerAuth: []
  *     parameters:
@@ -126,7 +126,7 @@ router.delete("/:id", authenticateUser, movieController.deleteMovie);
  *                 type: integer
  *     responses:
  *       200:
- *         description: The updated movie.
+ *         description: Film telah diperbarui.
  *     tags:
  *       - movies
  */

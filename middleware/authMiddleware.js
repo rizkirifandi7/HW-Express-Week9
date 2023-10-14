@@ -3,12 +3,13 @@ require("dotenv").config();
 const JWT_KEY = process.env.JWT_KEY;
 
 module.exports.authenticateUser = (req, res, next) => {
-	const beareHeader = req.headers["authorization"];
-	const token = beareHeader.split(" ")[1];
+	const bearerHeader = req.headers["authorization"];
 
-	if (!token) {
+	if (!bearerHeader) {
 		return res.status(403).json({ message: "Unauthorized" });
 	}
+
+	const token = bearerHeader.split(" ")[1];
 
 	jwt.verify(token, JWT_KEY, (err, user) => {
 		if (err) {
