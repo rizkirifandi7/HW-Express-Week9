@@ -45,3 +45,12 @@
 ::1 - - [15/Oct/2023:07:29:21 +0000] "POST /api/users/register HTTP/1.1" 200 129
 ::1 - - [15/Oct/2023:07:31:17 +0000] "POST /api/users/register HTTP/1.1" 200 95
 ::1 - - [15/Oct/2023:07:32:42 +0000] "POST /api/users/register HTTP/1.1" 200 98
+::1 - - [15/Oct/2023:08:04:39 +0000] "GET /api-docs/ HTTP/1.1" 304 -
+::1 - - [15/Oct/2023:08:04:39 +0000] "GET /api-docs/swagger-ui.css HTTP/1.1" 304 -
+::1 - - [15/Oct/2023:08:04:39 +0000] "GET /api-docs/swagger-ui-bundle.js HTTP/1.1" 304 -
+::1 - - [15/Oct/2023:08:04:39 +0000] "GET /api-docs/swagger-ui-init.js HTTP/1.1" 304 -
+::1 - - [15/Oct/2023:08:04:39 +0000] "GET /api-docs/swagger-ui-standalone-preset.js HTTP/1.1" 304 -
+::1 - - [15/Oct/2023:08:05:51 +0000] "POST /api/users/login HTTP/1.1" 200 338
+::1 - - [15/Oct/2023:08:06:17 +0000] "GET /api/movies?limit=10&offset=2 HTTP/1.1" 200 823
+::1 - - [15/Oct/2023:08:06:25 +0000] "GET /api/movies?limit=10&offset=1 HTTP/1.1" 200 884
+::1 - - [15/Oct/2023:08:06:31 +0000] "GET /api/movies?limit=10&offset=4 HTTP/1.1" 200 785

@@ -4,7 +4,7 @@ const Movie = require("../models/movieModel");
 const getMovies = async (req, res) => {
 	try {
 		const limit = req.query.limit || 10;
-		const offset = req.query.offset || 0;
+		const offset = (req.query.offset - 1) * limit || 0;
 
 		const movies = await Movie.getMovies(limit, offset);
 		res.json(movies);
