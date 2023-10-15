@@ -5,12 +5,19 @@ const swaggerUi = require("swagger-ui-express");
 const specs = require("./utils/swaggerConfig");
 const movieRoutes = require("./routes/movieRoutes");
 const userRoutes = require("./routes/userRoutes");
+const fs = require('fs');
+const path = require('path');
 
 const app = express();
 const port = 3000;
 
+// Tentukan lokasi file log
+const logStream = fs.createWriteStream(path.join(__dirname, 'log.txt'), { flags: 'a' });
+
+// Konfigurasi morgan untuk menulis log ke file
+app.use(morgan('common', { stream: logStream }));
+
 app.use(bodyParser.json());
-app.use(morgan("combined"));
 
 app.use("/api/movies", movieRoutes);
 app.use("/api/users", userRoutes);

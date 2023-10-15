@@ -46,7 +46,13 @@ router.post("/register", userController.registerUser);
  *                 type: string
  *     responses:
  *       200:
- *         description: Informasi pengguna dan Token JWT untuk akses terotentikasi.
+ *         description: User logged in successfully
+ *       404:
+ *         description: User not found
+ *       401:
+ *         description: Incorrect password
+ *       500:
+ *         description: Internal Server Error
  *     tags:
  *       - users
  */

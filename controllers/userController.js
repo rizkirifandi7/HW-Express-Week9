@@ -54,9 +54,9 @@ const loginUser = async (req, res) => {
 			// Buat token JWT 
 			const token = jwt.sign(payload, process.env.JWT_KEY, { expiresIn: "1h" });
 
-			res.json({ message: "Autentikasi berhasil!", user: payload, token: token });
+			res.json({ message: "Login berhasil!", user: payload, token: token });
 		} else {
-			res.status(401).json({ message: "Autentikasi gagal!" });
+			res.status(401).json({ message: "Email atau kata sandi tidak sesuai!" });
 		}
 	} catch (error) {
 		res.status(500).json({ message: "Internal Server Error!" });
