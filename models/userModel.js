@@ -1,7 +1,7 @@
 const pool = require("../db/database");
 
 class User {
-    // membuat pengguna baru
+	// membuat pengguna baru
 	static async createUser(email, gender, password, role) {
 		try {
 			const query = {
@@ -16,7 +16,7 @@ class User {
 		}
 	}
 
-    // mendapatkan pengguna berdasarkan email
+	// mendapatkan pengguna berdasarkan email
 	static async getUserByEmail(email) {
 		try {
 			const query = {
